@@ -23,5 +23,6 @@ class LessonController < ApplicationController
     def step6
         render text: flash[:notice]
     end
+    
 
 end
