@@ -14,5 +14,14 @@ class LessonController < ApplicationController
     def step4
         render text: "step4に移動したよ"
     end
-        
+    
+    def step5
+        flash[:notice] = "step6に移動します"
+        redirect_to action: "step6"
+    end
+    
+    def step6
+        render text: flash[:notice]
+    end
+
 end
